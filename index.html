@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+     <!-- animated-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- fontawesome -->
     <link
       rel="stylesheet"
@@ -275,12 +277,12 @@
         </div>
       </section>
       <!-- brand -->
-      <section class="brand" id="brand">
+      <section class="brand  " id="brand">
         <div
-          class="brand__container mx-auto border border-x-0 border-y-stroke border-default-medium px-4 py-10 sm:px-6 lg:px-10 "
+          class="brand__container  mx-auto border border-x-0 border-y-stroke border-default-medium px-4 py-10 sm:px-6 lg:px-10 "
         >
           <div
-            class="brand__content mx-auto grid max-w-6xl grid-cols-2 items-center justify-center gap-6 sm:grid-cols-3 lg:grid-cols-6"
+            class="brand__content wow animate__animated animate__slideInDown mx-auto grid max-w-6xl grid-cols-2 items-center justify-center gap-6 sm:grid-cols-3 lg:grid-cols-6"
           >
             <img
               src="./src/img/Branch/brand-light-01.svg"
@@ -637,7 +639,14 @@
     <!-- footer -->
     <footer class="footer" id="footer"></footer>
 
-    <!-- flowbite -->
+
+    <!-- wowjs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+<!-- flowbite -->
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
     <!-- jquery -->
     <script
