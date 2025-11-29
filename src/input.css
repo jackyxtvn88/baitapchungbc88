@@ -6,72 +6,70 @@
 
 body {
   color: black;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-
-
 
 @layer components {
   .btn {
     @apply inline-flex items-center justify-center rounded-full bg-black px-8 py-2 text-sm font-semibold text-white duration-300 ease-in-out;
   }
-}
-    
-
-.btn:hover{
-    background-color: #2c3149
-}
-
-.carousel__title 
-.text_line h1::before{
-    background-color: aqua;
-    content: "";
-    opacity: 1;
-
-}
-.carousel__img1{
-    position: relative;
-}
-.carousel__img1::before{
-    content: url(./img/shape/shape-02.svg);
-    position: absolute;
-    right:-50px;
+  .container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.brand__container{
-  background-color: #FBFBFB;
+.btn:hover {
+  background-color: #2c3149;
 }
-.brand__content img{
+
+.carousel__title .text_line h1::before {
+  background-color: aqua;
+  content: "";
+  opacity: 1;
+}
+.carousel__img1 {
+  position: relative;
+}
+.carousel__img1::before {
+  content: url(./img/shape/shape-02.svg);
+  position: absolute;
+  right: -50px;
+}
+
+.brand__container {
+  background-color: #fbfbfb;
+}
+.brand__content img {
   opacity: 50%;
   cursor: pointer;
 }
 
-.brand__content img:hover{
+.brand__content img:hover {
   opacity: 100%;
   transition: all 0.3s ease-in-out;
 }
 
-.features__title{
-  background-color: #EDF5FF;
+.features__title {
+  background-color: #edf5ff;
 }
 
 /* .features__item1{
   margin-left: auto;
 }
   */
-.packed__img img{
+.packed__img img {
   height: 80%;
 }
 
-.tab{
+.tab__content {
   background-image: url(./img/hero/download.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.text__color{
+.text__color {
   color: #4e5ff6;
 }
-
-
