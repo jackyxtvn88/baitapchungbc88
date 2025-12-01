@@ -14,6 +14,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- maincss -->
     <link rel="stylesheet" href="./src/output.css" />
   </head>
@@ -574,7 +576,7 @@
               >
                 Know More
                 <i
-                  class="fa fa-arrow-right transition-transform duration-300 group-hover:translate-x-2"
+                  class=" fa fa-arrow-right transition-transform duration-300 group-hover:translate-x-2"
                 ></i>
               </a>
             </div>
@@ -742,6 +744,329 @@
 
        </section>
 
+       <!--Join With Us  -->
+      <section class="joinwithus">
+        <div class="space-y-5 mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+          <div
+            class="joinwithus__content joinwithus__content relative bg-linear-to-b from-[#d6dff9] to-[#f9faff] p-12 min-h-60 rounded-lg overflow-hidden"
+          >
+            <!-- left -->
+            <div
+              class="flex flex-wrap gap-8 md:flex-nowrap md:items-center md:justify-between md:gap-0"
+            >
+              <div
+                class="animate_left md:w-[70%] lg:w-1/2"
+                style="opacity: 1; transform: none"
+              >
+                <h2
+                  class="mb-4 w-11/12 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle4"
+                >
+                  Join With Us Today &amp; Increase Your Productivity
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  convallis tortor eros. Donec vitae tortor lacus. Phasellus
+                  aliquam ante in maximus.
+                </p>
+              </div>
+              <!-- right -->
+              <div
+                class="animate_right lg:w-[45%]"
+                style="opacity: 1; transform: none"
+              >
+                <div class="flex items-center justify-end xl:justify-between">
+                  <img
+                    src="./src/img/hero/shape-06.webp "
+                    class="w-auto h-56"
+                    alt=""
+                  />
+                  <button class="btn px-6 py-4">
+                    <a href="#" class=""
+                      >Sign up free <i class="fa fa-arrow-right"> </i>
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQS -->
+      <section class="FAQ mt-20" id="FAQ">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+          <div
+            class="faq__content flex justify-between mx-auto mt-16 mb-10 leading-6"
+          >
+            <!-- title -->
+            <div
+              class="FAQ__title mb-4 inline-block rounded-full px-4.5 py-1.5"
+            >
+              <p class="font-medium uppercase text-black dark:text-white">
+                OUR FAQS
+              </p>
+              <h2
+                class="relative mb-6 text-5xl font-bold text-black dark:text-white xl:text-hero"
+              >
+                Frequently Asked <br />
+                Questions
+              </h2>
+              <a
+                href="#"
+                class="group mt-5 inline-flex items-center gap-2 text-base font-semibold text-heading hover:text-blue-700"
+              >
+                Know More
+                <i
+                  class="fa fa-arrow-right transition-transform duration-300 group-hover:translate-x-2"
+                ></i>
+              </a>
+            </div>
+            <!-- accordion -->
+            <div
+              id="accordion-collapse"
+              data-accordion="collapse"
+              class="rounded-base border bg-white border-default overflow-hidden shadow-xs w-1/2"
+            >
+              <h2 id="accordion-collapse-heading-1">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-t-base border border-t-0 border-x-0 border-b-default hover:text-heading hover:bg-neutral-secondary-medium gap-3"
+                  data-accordion-target="#accordion-collapse-body-1"
+                  aria-expanded="true"
+                  aria-controls="accordion-collapse-body-1"
+                >
+                  <span class="text-black font-bold"
+                    >Lorem ipsum dolor sit amet, consectetur</span
+                  >
+                  <svg
+                    data-accordion-icon
+                    class="w-5 h-5 shrink-0 rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m5 15 7-7 7 7"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-1"
+                class="hidden border border-s-0 border-e-0 border-t-0 border-b-default"
+                aria-labelledby="accordion-collapse-heading-1"
+              >
+                <div class="p-4 md:p-5">
+                  <p class="mb-2 text-gray-400">
+                    We provide digital experience services to startups and small
+                    <br />
+                    businesses. We help our clients succeed by creating brand
+                    <br />
+                    identities, digital experiences.
+                  </p>
+                </div>
+              </div>
+              <h2 id="accordion-collapse-heading-2">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body border border-x-0 border-b-default border-t-0 hover:text-heading hover:bg-neutral-secondary-medium gap-3"
+                  data-accordion-target="#accordion-collapse-body-2"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-2"
+                >
+                  <span class="text-black font-bold"
+                    >Lorem ipsum dolor sit amet, consectetur</span
+                  >
+                  <svg
+                    data-accordion-icon
+                    class="w-5 h-5 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m5 15 7-7 7 7"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-2"
+                class="hidden border border-s-0 border-e-0 border-t-0 border-b-default"
+                aria-labelledby="accordion-collapse-heading-2"
+              >
+                <div class="p-4 md:p-5">
+                  <p class="mb-2 text-gray-400">
+                    We provide digital experience services to startups and small
+                    <br />
+                    businesses. We help our clients succeed by creating brand
+                    <br />
+                    identities, digital experiences.
+                  </p>
+                </div>
+              </div>
+              <h2 id="accordion-collapse-heading-3">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body hover:text-heading hover:bg-neutral-secondary-medium gap-3"
+                  data-accordion-target="#accordion-collapse-body-3"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-3"
+                >
+                  <span class="text-black font-bold"
+                    >Lorem ipsum dolor sit amet, consectetur</span
+                  >
+                  <svg
+                    data-accordion-icon
+                    class="w-5 h-5 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m5 15 7-7 7 7"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-3"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-3"
+              >
+                <div
+                  class="p-4 md:p-5 border border-t-default border-b-0 border-x-0"
+                >
+                  <p class="mb-2 text-gray-400">
+                    We provide digital experience services to startups and small
+                    <br />
+                    businesses. We help our clients succeed by creating brand
+                    <br />
+                    identities, digital experiences.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="testimonial-section" id="testimonials">
+        <div class="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
+          <div class="animate_top mx-auto text-center">
+            <div
+              class="mb-4 inline-block rounded-full bg-[#EDF5FF] bg-zumthor px-4.5 py-1.5 dark:border dark:border-strokedark dark:bg-blacksection"
+            >
+              <span class="text-sectiontitle font-medium text-black"
+                >TESTIMONIALS</span
+              >
+            </div>
+            <h2
+              class="mx-auto mb-4 text-3xl font-bold text-[#0F172A] md:w-4/5 xl:w-1/2 xl:text-sectiontitle3"
+            >
+              Client’s Testimonials
+            </h2>
+            <p class="mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%] text-[#64748B]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
+              ante in maximus.
+            </p>
+          </div>
+        </div>
+        <div class="animate_top mx-auto mt-15 w-6xl px-4 md:px-8 xl:mt-20 xl:px-0">
+          <div class="swiper testimonial-01 mb-20 pb-22.5">
+            <div class="swiper-wrapper shadow-sm">
+              <div class="swiper-slide " >
+                <article class="testimonial-card">
+                  <div class="testimonial-card__header">
+                    <div>
+                      <h3 class="testimonial-card__name">Devid Smith</h3>
+                      <p class="testimonial-card__role">Founder @democompany</p>
+                    </div>
+                    <img
+                      src="./src/img/hero/user-01.webp"
+                      alt="Portrait of Devid Smith"
+                      class="testimonial-card__avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p class="testimonial-card__quote">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br> hendrerit,
+                    ligula sit amet cursus tincidunt, lorem sem elementum nisi,<br> convallis
+                    fringilla ante nibh non urna.”
+                  </p>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="testimonial-card">
+                  <div class="testimonial-card__header">
+                    <div>
+                      <h3 class="testimonial-card__name">Jhon Abraham</h3>
+                      <p class="testimonial-card__role">Founder @democompany</p>
+                    </div>
+                    <img
+                      src="./src/img/hero/user-02.webp"
+                      alt="Portrait of Jhon Abraham"
+                      class="testimonial-card__avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p class="testimonial-card__quote">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br> hendrerit,
+                    ligula sit amet cursus tincidunt, lorem sem elementum nisi,<br> convallis
+                    fringilla ante nibh non urna.”
+                  </p>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="testimonial-card">
+                  <div class="testimonial-card__header">
+                    <div>
+                      <h3 class="testimonial-card__name">Anne Carter</h3>
+                      <p class="testimonial-card__role">Product Lead @startup</p>
+                    </div>
+                    <img
+                      src="./src/img/hero/user-01.webp"
+                      alt="Portrait of Anne Carter"
+                      class="testimonial-card__avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p class="testimonial-card__quote">
+                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br> hendrerit,
+                    ligula sit amet cursus tincidunt, lorem sem elementum nisi,<br> convallis
+                    fringilla ante nibh non urna.”
+                  </p>
+                </article>
+              </div>
+            </div>
+            <div class="swiper-pagination testimonial-pagination"></div>
+          </div>
+        </div>
+      </section>
+
     </header>
     <!-- footer -->
     <footer class="footer" id="footer"></footer>
@@ -762,5 +1087,34 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const testimonialSwiper = new Swiper('.testimonial-01', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+        },
+        pagination: {
+          el: '.testimonial-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 1.5,
+            spaceBetween: 32,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
