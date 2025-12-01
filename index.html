@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -31,7 +31,7 @@
       <!-- nav -->
       <nav class="bg-white fixed w-full z-20 top-0 start-0 border-default">
         <div
-          class="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-10"
+          class="mx-auto flex w-full max-w-full items-center justify-between px-4 py-4 sm:px-6 lg:max-w-7xl lg:px-10"
         >
           <div class="logo shrink-0 pr-4 lg:pr-10">
             <a href="#" class="">
@@ -70,7 +70,7 @@
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
             <ul
-              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary"
+              class="flex w-full flex-col font-medium p-4 text-left md:w-auto md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary"
             >
               <li>
                 <a
@@ -327,8 +327,8 @@
       </section>
       <!-- features -->
       <section class="features w-full" id="features">
-        <div class="container mx-auto ">
-          <div class="features__content text-center mt-20 leading-6 ">
+        <div class="container mx-auto">
+          <div class="features__content text-center mt-20 leading-6">
             <div
               class="features__title mb-4 inline-block rounded-full px-4.5 py-1.5 wow animate__animated animate__slideInDown"
             >
@@ -350,7 +350,7 @@
           class="features__item mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-6 px-4 sm:px-6 md:grid-cols-2 xl:grid-cols-3 wow animate__animated animate__slideInDown"
         >
           <div
-            class="features__item1 mx-auto w-full rounded-lg bg-white p-8 text-center shadow-lg duration-300 ease-in-out hover:shadow-2xl sm:p-10 lg:p-12 "
+            class="features__item1 mx-auto w-full rounded-lg bg-white p-8 text-center shadow-lg duration-300 ease-in-out hover:shadow-2xl sm:p-10 lg:p-12"
           >
             <div class="features__img">
               <img
@@ -605,12 +605,12 @@
             >
               <ul
                 id="default-tab"
-                class="flex w-full flex-wrap items-center justify-between text-center text-sm font-medium"
+                class="flex w-full flex-col items-stretch gap-4 text-center text-sm font-medium md:flex-row md:flex-wrap md:items-center md:justify-between md:gap-6"
                 data-tabs-toggle="#default-tab-content"
                 role="tablist"
               >
                 <li
-                  class="me-2 flex items-center justify-baseline"
+                  class="flex flex-col items-center gap-3 text-center md:me-2 md:flex-row md:justify-baseline"
                   role="presentation"
                 >
                   <p
@@ -631,7 +631,7 @@
                   </button>
                 </li>
                 <li
-                  class="me-2 flex items-center justify-baseline"
+                  class="flex flex-col items-center gap-3 text-center md:me-2 md:flex-row md:justify-baseline"
                   role="presentation"
                 >
                   <p
@@ -652,7 +652,7 @@
                   </button>
                 </li>
                 <li
-                  class="me-2 flex items-center justify-baseline"
+                  class="flex flex-col items-center gap-3 text-center md:me-2 md:flex-row md:justify-baseline"
                   role="presentation"
                 >
                   <p
@@ -676,9 +676,9 @@
             </div>
             <div
               id="default-tab-content"
-              class="container mx-auto flex w-80% items-center justify-between gap-10 lg:flex-row lg:gap-14"
+              class="container mx-auto flex w-full flex-col items-center justify-between gap-10 lg:w-4/5 lg:flex-row lg:gap-14"
             >
-              <div class="default__left w-1/2">
+              <div class="default__left w-full lg:w-1/2">
                 <div
                   id="profile"
                   class="hidden rounded-base p-4"
@@ -740,7 +740,9 @@
                   </p>
                 </div>
               </div>
-              <div class="default__right w-1/2">
+              <div
+                class="default__right mt-6 flex w-full justify-center lg:mt-0 lg:w-1/2"
+              >
                 <img src="./src/img/hero/features-light-01.webp" alt="" />
               </div>
             </div>
@@ -787,7 +789,7 @@
           </div>
           <div class="number">
             <div
-              class="companies__number flex justify-center gap-10 lg:gap-20 xl:gap-32"
+              class="companies__number flex flex-col items-center gap-8 md:flex-row md:justify-center md:gap-10 lg:gap-20 xl:gap-32"
             >
               <div class="companies__number1">
                 <h3 class="text-5xl font-medium text-center mb-4">500K</h3>
@@ -834,7 +836,7 @@
           <div class="integrations__icon mt-4">
             <div class="flex flex-wrap justify-around gap-y-10">
               <div
-                class="animate_top w-1/6"
+                class="animate_top w-1/2 sm:w-1/3 lg:w-1/6"
                 style="opacity: 1; transform: none"
               >
                 <div
@@ -853,11 +855,11 @@
                 </div>
               </div>
               <div
-                class="animate_top w-1/6"
+                class="animate_top w-1/2 sm:w-1/3 lg:w-1/6"
                 style="opacity: 1; transform: none"
               ></div>
               <div
-                class="animate_top w-1/6"
+                class="animate_top w-1/2 sm:w-1/3 lg:w-1/6"
                 style="opacity: 1; transform: none"
               >
                 <div
@@ -876,13 +878,13 @@
                 </div>
               </div>
               <div
-                class="animate_top w-1/6"
+                class="animate_top w-1/2 sm:w-1/3 lg:w-1/6"
                 style="opacity: 1; transform: none"
               >
                 <div class="h-[11px] w-[11px] rounded-full bg-[#FFDB26]"></div>
               </div>
               <div
-                class="animate_top w-1/6"
+                class="animate_top w-1/2 sm:w-1/3 lg:w-1/6"
                 style="opacity: 1; transform: none"
               >
                 <div
@@ -901,17 +903,17 @@
                 </div>
               </div>
               <div
-                class="animate_top w-1/6"
+                class="animate_top w-1/2 sm:w-1/3 lg:w-1/6"
                 style="opacity: 1; transform: none"
               ></div>
               <div
-                class="animate_top w-1/6"
+                class="animate_top w-1/2 sm:w-1/3 lg:w-1/6"
                 style="opacity: 1; transform: none"
               >
                 <div class="h-[15px] w-[15px] rounded-full bg-[#62E888]"></div>
               </div>
               <div
-                class="animate_top w-1/6"
+                class="animate_top w-1/2 sm:w-1/3 lg:w-1/6"
                 style="opacity: 1; transform: none"
               >
                 <div
@@ -930,13 +932,13 @@
                 </div>
               </div>
               <div
-                class="animate_top w-1/6"
+                class="animate_top w-1/2 sm:w-1/3 lg:w-1/6"
                 style="opacity: 1; transform: none"
               >
                 <div class="h-[23px] w-[23px] rounded-full bg-[#EF5C00]"></div>
               </div>
               <div
-                class="animate_top w-1/6"
+                class="animate_top w-1/2 sm:w-1/3 lg:w-1/6"
                 style="opacity: 1; transform: none"
               >
                 <div
@@ -955,13 +957,13 @@
                 </div>
               </div>
               <div
-                class="animate_top w-1/6"
+                class="animate_top w-1/2 sm:w-1/3 lg:w-1/6"
                 style="opacity: 1; transform: none"
               >
                 <div class="h-[15px] w-[15px] rounded-full bg-[#016BFF]"></div>
               </div>
               <div
-                class="animate_top w-1/6"
+                class="animate_top w-1/2 sm:w-1/3 lg:w-1/6"
                 style="opacity: 1; transform: none"
               >
                 <div
@@ -1036,11 +1038,11 @@
       <section class="FAQ mt-20" id="FAQ">
         <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
           <div
-            class="faq__content flex justify-between mx-auto mt-16 mb-10 leading-6"
+            class="faq__content mx-auto mt-16 mb-10 flex flex-col gap-10 leading-6 lg:flex-row lg:justify-between"
           >
             <!-- title -->
             <div
-              class="FAQ__title mb-4 inline-block rounded-full px-4.5 py-1.5"
+              class="FAQ__title mb-4 inline-block w-full rounded-full px-4.5 py-1.5 lg:w-2/5"
             >
               <p class="font-medium uppercase text-black dark:text-white">
                 OUR FAQS
@@ -1065,7 +1067,7 @@
             <div
               id="accordion-collapse"
               data-accordion="collapse"
-              class="rounded-base border bg-white border-default overflow-hidden shadow-xs w-1/2"
+              class="w-full rounded-base border border-default bg-white overflow-hidden shadow-xs lg:w-1/2"
             >
               <h2 id="accordion-collapse-heading-1">
                 <button
@@ -1236,7 +1238,7 @@
           </div>
         </div>
         <div
-          class="animate_top mx-auto mt-15 w-6xl px-4 md:px-8 xl:mt-20 xl:px-0"
+          class="animate_top mx-auto mt-15 w-full max-w-6xl px-4 md:px-8 xl:mt-20 xl:px-0"
         >
           <div class="swiper testimonial-01 mb-20 pb-22.5">
             <div class="swiper-wrapper shadow-sm">
@@ -1551,48 +1553,110 @@
 
       <!-- contact -->
       <section class="px-4 md:px-8 2xl:px-0">
-        <div class="relative container mx-auto max-w-c-1390 px-7 pt-10 lg:px-15 xl:px-20 xl:pt-20 bg-gradient-to-b from-[#fff] to-[#909fb63b]">
+        <div
+          class="relative container mx-auto max-w-c-1390 px-7 pt-10 lg:px-15 xl:px-20 xl:pt-20 bg-gradient-to-b from-[#fff] to-[#909fb63b]"
+        >
           <div class="absolute top-0 left-0 -z-1 h-2/3 w-full rounded-lg"></div>
 
           <div class="absolute bottom-[-255px] left-0 -z-1 h-full w-full">
-            <img src="./src/img/hero/download.svg" alt="Dotted" loading="lazy" decoding="async" data-nimg="1" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+            <img
+              src="./src/img/hero/download.svg"
+              alt="Dotted"
+              loading="lazy"
+              decoding="async"
+              data-nimg="1"
+              style="
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                inset: 0px;
+                color: transparent;
+              "
+            />
           </div>
 
-          <div class="flex flex-col-reverse flex-wrap gap-8 md:flex-row md:flex-nowrap md:justify-between xl:gap-20">
-            <div class="w-full rounded-lg bg-white p-7 shadow-xl md:w-3/5 lg:w-3/4 xl:p-15" style="opacity: 1; transform: none;">
-              <h1 class="mb-15 text-3xl font-semibold text-black">Send a message</h1>
+          <div
+            class="flex flex-col-reverse flex-wrap gap-8 md:flex-row md:flex-nowrap md:justify-between xl:gap-20"
+          >
+            <div
+              class="w-full rounded-lg bg-white p-7 shadow-xl md:w-3/5 lg:w-3/4 xl:p-15"
+              style="opacity: 1; transform: none"
+            >
+              <h1 class="mb-15 text-3xl font-semibold text-black">
+                Send a message
+              </h1>
 
-              <form action="https://formbold.com/s/unique_form_id" method="POST">
-                <div class="mb-7 flex flex-col gap-7 lg:flex-row lg:justify-between lg:gap-14">
-                  <input placeholder="Full name" class="w-full border border-gray-300 bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none lg:w-1/2" type="text">
+              <form
+                action="https://formbold.com/s/unique_form_id"
+                method="POST"
+              >
+                <div
+                  class="mb-7 flex flex-col gap-7 lg:flex-row lg:justify-between lg:gap-14"
+                >
+                  <input
+                    placeholder="Full name"
+                    class="w-full border border-gray-300 bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none lg:w-1/2"
+                    type="text"
+                  />
 
-                  <input placeholder="Email address" class="w-full border border-gray-300 bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none lg:w-1/2" type="email">
+                  <input
+                    placeholder="Email address"
+                    class="w-full border border-gray-300 bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none lg:w-1/2"
+                    type="email"
+                  />
                 </div>
 
-                <div class="mb-7 flex flex-col gap-7 lg:flex-row lg:justify-between lg:gap-14">
-                  <input placeholder="Subject" class="w-full border border-gray-300 bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none lg:w-1/2" type="text">
+                <div
+                  class="mb-7 flex flex-col gap-7 lg:flex-row lg:justify-between lg:gap-14"
+                >
+                  <input
+                    placeholder="Subject"
+                    class="w-full border border-gray-300 bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none lg:w-1/2"
+                    type="text"
+                  />
 
-                  <input placeholder="Phone number" class="w-full border border-gray-300 bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none lg:w-1/2" type="text">
+                  <input
+                    placeholder="Phone number"
+                    class="w-full border border-gray-300 bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none lg:w-1/2"
+                    type="text"
+                  />
                 </div>
 
                 <div class="mb-11 flex">
-                  <textarea placeholder="Message" rows="4" class="w-full border border-gray-300 bg-transparent focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none"></textarea>
+                  <textarea
+                    placeholder="Message"
+                    rows="4"
+                    class="w-full border border-gray-300 bg-transparent focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none"
+                  ></textarea>
                 </div>
 
-               <div class="flex flex-wrap gap-4 xl:justify-between">
-                <div class="mb-6 flex md:mb-0">
-                  <label for="default-checkbox" class="max-w-[425px] cursor-pointer select-none flex items-start gap-3">
-                     <input type="checkbox" id="default-checkbox" class="peer sr-only">
-                      <span class="mt-1 flex h-5 w-5 items-center justify-center rounded border border-gray-400 bg-gray-100 text-transparent peer-checked:bg-blue-600 peer-checked:text-white duration-200">
+                <div class="flex flex-wrap gap-4 xl:justify-between">
+                  <div class="mb-6 flex md:mb-0">
+                    <label
+                      for="default-checkbox"
+                      class="max-w-[425px] cursor-pointer select-none flex items-start gap-3"
+                    >
+                      <input
+                        type="checkbox"
+                        id="default-checkbox"
+                        class="peer sr-only"
+                      />
+                      <span
+                        class="mt-1 flex h-5 w-5 items-center justify-center rounded border border-gray-400 bg-gray-100 text-transparent peer-checked:bg-blue-600 peer-checked:text-white duration-200"
+                      >
                         <i class="ionicons ion-android-checkbox"></i>
                       </span>
-                      
-                       <p class="text-gray-600 leading-5">
-                        By clicking Checkbox, you agree to use our "Form" terms and consent cookie usage in browser
+
+                      <p class="text-gray-600 leading-5">
+                        By clicking Checkbox, you agree to use our "Form" terms
+                        and consent cookie usage in browser
                       </p>
                     </label>
-                 </div>
-                  <button aria-label="send message" class="mt-4 inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-gray-700">
+                  </div>
+                  <button
+                    aria-label="send message"
+                    class="mt-4 inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-gray-700"
+                  >
                     Send message
                     <i class="fa fa-arrow-right"></i>
                   </button>
@@ -1600,13 +1664,18 @@
               </form>
             </div>
 
-            <div class="animate_top w-full md:w-2/5 md:p-7 lg:w-[26%] xl:pt-15" style="opacity: 1; transform: none;">
-              <h1 class="mb-12.5 text-3xl font-semibold text-black xl:text-sectiontitle2">
+            <div
+              class="animate_top w-full md:w-2/5 md:p-7 lg:w-[26%] xl:pt-15"
+              style="opacity: 1; transform: none"
+            >
+              <h1
+                class="mb-12.5 text-3xl font-semibold text-black xl:text-sectiontitle2"
+              >
                 Find us
               </h1>
 
               <div class="mb-7">
-                <h2 class="mb-4 text-metatitle3 font-medium text-black ">
+                <h2 class="mb-4 text-metatitle3 font-medium text-black">
                   Our location
                 </h2>
 
@@ -1614,7 +1683,7 @@
               </div>
 
               <div class="mb-7">
-                <h2 class="mb-4 text-metatitle3 font-medium text-black ">
+                <h2 class="mb-4 text-metatitle3 font-medium text-black">
                   Email Address
                 </h2>
 
@@ -1624,7 +1693,7 @@
               </div>
 
               <div class="mb-7">
-                <h3 class="mb-4 text-metatitle3 font-medium text-black ">
+                <h3 class="mb-4 text-metatitle3 font-medium text-black">
                   Phone number
                 </h3>
 
@@ -1633,251 +1702,386 @@
                 </p>
               </div>
             </div>
-
-            
           </div>
         </div>
-       </section>
- <!-- blog -->
-  <section class="py-20 lg:py-25 xl:py-30">
+              
+      </section>
+      <!-- blog -->
+      <section class="py-20 lg:py-25 xl:py-30">
         <!-- Blog title-->
         <div class="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
           <div
-          class="feature_title items-center text-center my-16 mx-5 py-9 space-y-7 wow animate_animated animate_fadeInDown"
-          data-wow-delay="0.1s"
-        >
-          <p
-            class="inline-block bg-blue-100 text-black px-6 py-2 rounded-full font-medium text-sm"
+            class="feature_title items-center text-center my-16 mx-5 py-9 space-y-7 wow animate_animated animate_fadeInDown"
+            data-wow-delay="0.1s"
           >
-            NEWS & BLOGS
-          </p>
-          <h1 class="text-5xl font-bold">Latest News & Blogs</h1>
-          <h2 class="text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor<br />eros. Donec vitae tortor lacus. Phasellus
-            aliquam ante in maximus.
-          </h2>
-        </div>
-
-
+            <p
+              class="inline-block bg-blue-100 text-black px-6 py-2 rounded-full font-medium text-sm"
+            >
+              NEWS & BLOGS
+            </p>
+            <h1 class="text-5xl font-bold">Latest News & Blogs</h1>
+            <h2 class="text-gray-500">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis tortor<br />eros. Donec vitae tortor lacus. Phasellus
+              aliquam ante in maximus.
+            </h2>
+          </div>
         </div>
 
         <!-- Blog content-->
-         <div class="mx-auto mt-15 max-w-c-1280 px-6 md:px-8 xl:mt-20 xl:px-0">
-          <div class=" container grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3 xl:gap-10">
+        <div class="mx-auto mt-15 max-w-c-1280 px-6 md:px-8 xl:mt-20 xl:px-0">
+          <div
+            class="container grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3 xl:gap-10"
+          >
             <!--Blog 1-->
-            <div class="animated_top group rounded-lg bg-white p-4 pb-9 shadow-xl" style="opacity: 1; transform: none;">
-              <a href="#" class="relative block aspect-[368/239] overflow-hidden rounded-lg">
-                <img src="./src/img/logo/9e6b67ab379a182243ac521db056e96918ff1b5d-1000x667.png" alt="Exploring MERN Stack: Powering Modern Web Development" loading="lazy" decoding="async" data-nimg="1" class="duration-300 group-hover:scale-110" sizes="10vw" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+            <div
+              class="animated_top group rounded-lg bg-white p-4 pb-9 shadow-xl"
+              style="opacity: 1; transform: none"
+            >
+              <a
+                href="#"
+                class="relative block aspect-[368/239] overflow-hidden rounded-lg"
+              >
+                <img
+                  src="./src/img/logo/9e6b67ab379a182243ac521db056e96918ff1b5d-1000x667.png"
+                  alt="Exploring MERN Stack: Powering Modern Web Development"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  class="duration-300 group-hover:scale-110"
+                  sizes="10vw"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    inset: 0px;
+                    color: transparent;
+                  "
+                />
               </a>
 
               <div class="px-4">
-                <h1 class="mb-3.5 mt-7.5 line-champ-2 text-lg font-medium text-black hover:text-blue-500 xl:text-metatitle2">
+                <h1
+                  class="mb-3.5 mt-7.5 line-champ-2 text-lg font-medium text-black hover:text-blue-500 xl:text-metatitle2"
+                >
                   <a href="#" class="text-2xl">
                     Exploring MERN Stack: Powering Modern We...
                   </a>
                 </h1>
 
                 <p class="line-champ-3 text-gray-400">
-                  In the world of web development, staying ahead of the curve is crucial. One technology stack that ha
+                  In the world of web development, staying ahead of the curve is
+                  crucial. One technology stack that ha
                 </p>
               </div>
             </div>
 
             <!--Blog 2-->
-            <div class="animated_top group rounded-lg bg-white p-4 pb-9 shadow-xl" style="opacity: 1; transform: none;">
-              <a href="#" class="relative block aspect-[368/239] overflow-hidden rounded-lg">
-                <img src="./src/img/logo/b34fca863dc4efa821da4e71328ec9718ab14062-970x440.png" alt="Exploring MERN Stack: Powering Modern Web Development" loading="lazy" decoding="async" data-nimg="1" class="duration-300 group-hover:scale-110" sizes="10vw" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+            <div
+              class="animated_top group rounded-lg bg-white p-4 pb-9 shadow-xl"
+              style="opacity: 1; transform: none"
+            >
+              <a
+                href="#"
+                class="relative block aspect-[368/239] overflow-hidden rounded-lg"
+              >
+                <img
+                  src="./src/img/logo/b34fca863dc4efa821da4e71328ec9718ab14062-970x440.png"
+                  alt="Exploring MERN Stack: Powering Modern Web Development"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  class="duration-300 group-hover:scale-110"
+                  sizes="10vw"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    inset: 0px;
+                    color: transparent;
+                  "
+                />
               </a>
 
               <div class="px-4">
-                <h1 class="mb-3.5 mt-7.5 line-champ-2 text-lg font-medium text-black hover:text-blue-500 xl:text-metatitle2">
+                <h1
+                  class="mb-3.5 mt-7.5 line-champ-2 text-lg font-medium text-black hover:text-blue-500 xl:text-metatitle2"
+                >
                   <a href="#" class="text-2xl">
                     Best UI components for modern website
                   </a>
                 </h1>
 
                 <p class="line-champ-3 text-gray-400">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat...
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat...
                 </p>
               </div>
             </div>
 
             <!--Blog 3-->
-            <div class="animated_top group rounded-lg bg-white p-4 pb-9 shadow-xl" style="opacity: 1; transform: none;">
-              <a href="#" class="relative block aspect-[368/239] overflow-hidden rounded-lg">
-                <img src="./src/img/logo/f492eebba9742b0c8c71dd541bd123cdd4fe2130-970x440.png" alt="Exploring MERN Stack: Powering Modern Web Development" loading="lazy" decoding="async" data-nimg="1" class="duration-300 group-hover:scale-110" sizes="10vw" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+            <div
+              class="animated_top group rounded-lg bg-white p-4 pb-9 shadow-xl"
+              style="opacity: 1; transform: none"
+            >
+              <a
+                href="#"
+                class="relative block aspect-[368/239] overflow-hidden rounded-lg"
+              >
+                <img
+                  src="./src/img/logo/f492eebba9742b0c8c71dd541bd123cdd4fe2130-970x440.png"
+                  alt="Exploring MERN Stack: Powering Modern Web Development"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  class="duration-300 group-hover:scale-110"
+                  sizes="10vw"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    inset: 0px;
+                    color: transparent;
+                  "
+                />
               </a>
 
               <div class="px-4">
-                <h1 class="mb-3.5 mt-7.5 line-champ-2 text-lg font-medium text-black hover:text-blue-500 xl:text-metatitle2">
+                <h1
+                  class="mb-3.5 mt-7.5 line-champ-2 text-lg font-medium text-black hover:text-blue-500 xl:text-metatitle2"
+                >
                   <a href="#" class="text-2xl">
                     The power of UX/UI: Elevating Digital Ex..
                   </a>
                 </h1>
 
-                <p class="line-champ-3 text-gray-400" >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.
+                <p class="line-champ-3 text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                  sit amet dictum neque, laoreet dolor.
                 </p>
               </div>
             </div>
           </div>
-         </div>
-       </section>
+        </div>
+              
+      </section>
     </header>
     <!-- footer -->
     <footer class="border border-gray-300 bg-white">
-    <div class=" container mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+      <div class="container mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
         <div class="py-20 lg:py-25">
-            <div class="flex flex-wrap justify-between gap-12 lg:gap-0">
-                <div class="w-full lg:w-1/4">
-                    <a href="./index.html" class="relative block mb-4">
-                        <span class="text-4xl font-bold text-blue-600">
-                          <img src="./src/img/logo/logo-light.svg" alt="Logo">
-                        </span> 
-                    </a>
+          <div class="flex flex-wrap justify-between gap-12 lg:gap-0">
+            <div class="w-full lg:w-1/4">
+              <a href="./index.html" class="relative block mb-4">
+                <span class="text-4xl font-bold text-blue-600">
+                  <img src="./src/img/logo/logo-light.svg" alt="Logo" />
+                </span>
+              </a>
 
-                    <p class="text-gray-600 mb-10">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+              <p class="text-gray-600 mb-10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
 
-                    <p class="mb-2 text-xs uppercase tracking-[5px] font-semibold text-gray-700">
-                        CONTACT
-                    </p>
+              <p
+                class="mb-2 text-xs uppercase tracking-[5px] font-semibold text-gray-700"
+              >
+                CONTACT
+              </p>
 
-                    <a href="mailto:hello@solid.com" class="text-xl font-medium text-black">
-                        hello@solid.com
-                    </a>
-                </div>
-
-                <div class="w-full flex flex-col gap-12 md:flex-row md:justify-between lg:w-3/4 xl:w-7/12">
-                    <div class="w-full md:w-1/3 lg:w-1/4">
-                        <h1 class="mb-6 font-semibold text-3xl text-black">
-                            Quick Links
-                        </h1>
-
-                        <ul>
-                            <li>
-                                <a href="#" class="mb-3 inline-block text-gray-600 hover:text-blue-600">Home</a>
-                            </li>
-                            <li>
-                                <a href="#" class="mb-3 inline-block text-gray-600 hover:text-blue-600">Product</a>
-                            </li>
-                            <li>
-                                <a href="#" class="mb-3 inline-block text-gray-600 hover:text-blue-600">Careers</a>
-                            </li>
-                            <li>
-                                <a href="#" class="mb-3 inline-block text-gray-600 hover:text-blue-600">Pricing</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="w-full md:w-1/3 lg:w-1/4">
-                        <h1 class="mb-6 font-semibold text-3xl text-black">
-                            Support
-                        </h1>
-
-                        <ul>
-                            <li>
-                                <a href="#" class="mb-3 inline-block text-gray-600 hover:text-blue-600">Company</a>
-                            </li>
-                            <li>
-                                <a href="#" class="mb-3 inline-block text-gray-600 hover:text-blue-600">Press media</a>
-                            </li>
-                            <li>
-                                <a href="#" class="mb-3 inline-block text-gray-600 hover:text-blue-600">Our Blog</a>
-                            </li>
-                            <li>
-                                <a href="#" class="mb-3 inline-block text-gray-600 hover:text-blue-600">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="w-full md:w-1/3 lg:w-2/5">
-                        <h1 class="mb-6 font-semibold text-3xl text-black">
-                            Newsletter
-                        </h1>
-
-                        <p class="mb-4 text-gray-600">
-                            Subscribe to receive future updates
-                        </p>
-
-                        <form>
-                            <div class="relative">
-                                <input placeholder="Email address" required class="w-full rounded-md border border-gray-300 px-4 py-3 text-sm focus:border-blue-600 focus:outline-none" type="email">
-
-                                <button aria-label="signup to newsletter" class="absolute right-0 top-1/2 -translate-y-1/2 mr-3 text-gray-400 hover:text-blue-600">
-                                    <i class="ionicons ion-android-send"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+              <a
+                href="mailto:hello@solid.com"
+                class="text-xl font-medium text-black"
+              >
+                hello@solid.com
+              </a>
             </div>
-        </div>
 
-        <div class="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-gray-200 py-7 lg:flex-row lg:justify-between lg:gap-0">
-            <div class="order-2 lg:order-1">
-                <ul class="flex gap-6 text-sm text-gray-600">
-                    <li>
-                      <a href="#" class="hover:text-blue-600">
-                        English
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="hover:text-blue-600">
-                        Privacy Policy
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="hover:text-blue-600">
-                        Support
-                      </a>
-                    </li>
+            <div
+              class="w-full flex flex-col gap-12 md:flex-row md:justify-between lg:w-3/4 xl:w-7/12"
+            >
+              <div class="w-full md:w-1/3 lg:w-1/4">
+                <h1 class="mb-6 font-semibold text-3xl text-black">
+                  Quick Links
+                </h1>
+
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      class="mb-3 inline-block text-gray-600 hover:text-blue-600"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="mb-3 inline-block text-gray-600 hover:text-blue-600"
+                      >Product</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="mb-3 inline-block text-gray-600 hover:text-blue-600"
+                      >Careers</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="mb-3 inline-block text-gray-600 hover:text-blue-600"
+                      >Pricing</a
+                    >
+                  </li>
                 </ul>
-            </div>
+              </div>
 
-            <div class="order-1 lg:order-2">
-                <p class="text-sm font-medium text-black bg-white px-3 py-1 rounded">
-                  © 2025 Solid. All rights reserved
+              <div class="w-full md:w-1/3 lg:w-1/4">
+                <h1 class="mb-6 font-semibold text-3xl text-black">Support</h1>
+
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      class="mb-3 inline-block text-gray-600 hover:text-blue-600"
+                      >Company</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="mb-3 inline-block text-gray-600 hover:text-blue-600"
+                      >Press media</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="mb-3 inline-block text-gray-600 hover:text-blue-600"
+                      >Our Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="mb-3 inline-block text-gray-600 hover:text-blue-600"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="w-full md:w-1/3 lg:w-2/5">
+                <h1 class="mb-6 font-semibold text-3xl text-black">
+                  Newsletter
+                </h1>
+
+                <p class="mb-4 text-gray-600">
+                  Subscribe to receive future updates
                 </p>
-            </div>
 
-            <div class="order-3">
-                <ul class="flex gap-6 text-xl text-gray-400">
-                    <li>
-                      <a href="#" aria-label="facebook link" class="hover:text-blue-600">
-                        <i class="fab fa-facebook-f"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" aria-label="twitter link" class="hover:text-blue-600">
-                        <i class="fab fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" aria-label="linkedin link" class="hover:text-blue-600">
-                        <i class="fab fa-linkedin-in"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" aria-label="instagram link" class="hover:text-blue-600">
-                        <i class="fab fa-behance"></i>
-                      </a>
-                    </li>
-                </ul>
+                <form>
+                  <div class="relative">
+                    <input
+                      placeholder="Email address"
+                      required
+                      class="w-full rounded-md border border-gray-300 px-4 py-3 text-sm focus:border-blue-600 focus:outline-none"
+                      type="email"
+                    />
+
+                    <button
+                      aria-label="signup to newsletter"
+                      class="absolute right-0 top-1/2 -translate-y-1/2 mr-3 text-gray-400 hover:text-blue-600"
+                    >
+                      <i class="ionicons ion-android-send"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+
+        <div
+          class="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-gray-200 py-7 lg:flex-row lg:justify-between lg:gap-0"
+        >
+          <div class="order-2 lg:order-1">
+            <ul class="flex gap-6 text-sm text-gray-600">
+              <li>
+                <a href="#" class="hover:text-blue-600"> English </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-blue-600"> Privacy Policy </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-blue-600"> Support </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="order-1 lg:order-2">
+            <p
+              class="text-sm font-medium text-black bg-white px-3 py-1 rounded"
+            >
+              © 2025 Solid. All rights reserved
+            </p>
+          </div>
+
+          <div class="order-3">
+            <ul class="flex gap-6 text-xl text-gray-400">
+              <li>
+                <a
+                  href="#"
+                  aria-label="facebook link"
+                  class="hover:text-blue-600"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label="twitter link"
+                  class="hover:text-blue-600"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label="linkedin link"
+                  class="hover:text-blue-600"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label="instagram link"
+                  class="hover:text-blue-600"
+                >
+                  <i class="fab fa-behance"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <div class="bottom-8 fixed right-8">
-    <button class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white shadow-lg">
+      <button
+        class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white shadow-lg"
+      >
         <a href="#" class="backtotop cd-top text-replace js-cd-top">
           <i class="fa fa-angle-up"></i>
         </a>
-    </button>
-    </div>
+      </button>
+          
+    </div>
 
     <!-- wowjs -->
     <script

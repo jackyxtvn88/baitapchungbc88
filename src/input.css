@@ -15,9 +15,15 @@ body {
     @apply inline-flex items-center justify-center rounded-full bg-black px-8 py-2 text-sm font-semibold text-white duration-300 ease-in-out;
   }
   .container {
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      width: 80%;
+    }
   }
 }
 
