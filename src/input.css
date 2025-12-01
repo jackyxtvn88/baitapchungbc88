@@ -186,3 +186,57 @@ body {
   background-size: auto;
   background-position: cover;
 }
+.animate__slideInDown,
+.animate__slideInLeft,
+.animate__slideInRight {
+  --animate-duration: 0.9s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  animation-fill-mode: both;
+}
+
+@keyframes smoothSlideInDown {
+  from {
+    transform: translate3d(0, -24px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes smoothSlideInLeft {
+  from {
+    transform: translate3d(-24px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes smoothSlideInRight {
+  from {
+    transform: translate3d(24px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.animate__slideInDown {
+  animation-name: smoothSlideInDown;
+}
+
+.animate__slideInLeft {
+  animation-name: smoothSlideInLeft;
+  animation-delay: 0.1s;
+}
+
+.animate__slideInRight {
+  animation-name: smoothSlideInRight;
+  animation-delay: 0.25s;
+}
