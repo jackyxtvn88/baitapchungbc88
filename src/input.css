@@ -3,7 +3,7 @@
 @source "../node_modules/flowbite";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 @import "flowbite/src/themes/default";
-@import 'swiper/css';
+@import "swiper/css";
 
 body {
   color: black;
@@ -75,9 +75,108 @@ body {
   color: #4e5ff6;
 }
 
-.integrations__icon{
-background-image: url(./img/hero/download.svg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
+.integrations__icon {
+  background-image: url(./img/hero/download.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.jonwithus__content {
+  background-image: linear-gradient(to bottom, #d6dff9, #f9faff);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.faq__content {
+  background-image: url(./img/hero/download.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.testimonial-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9ff 80%);
+  padding-bottom: 4rem;
+}
+
+.testimonial-01 {
+  position: relative;
+}
+
+.testimonial-01::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 15px;
+  height: 60px;
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.25) 0%,
+    rgba(59, 130, 246, 0) 70%
+  );
+  filter: blur(20px);
+  z-index: -1;
+}
+
+.testimonial-card {
+  border-radius: 28px;
+  padding: 32px;
+  background: #fff;
+  box-shadow: 0 25px 80px rgba(15, 23, 42, 0.08);
+}
+
+.testimonial-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.testimonial-card__avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.testimonial-card__name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.testimonial-card__role {
+  color: #64748b;
+  font-size: 15px;
+}
+
+.testimonial-card__quote {
+  color: #475569;
+  line-height: 1.7;
+}
+
+.testimonial-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 6px !important;
+  background: #cbd5f5;
+  opacity: 1;
+}
+
+.testimonial-pagination .swiper-pagination-bullet-active {
+  width: 18px;
+  border-radius: 999px;
+  background: #1d4ed8;
+}
+
+.pricing__content {
+  background-image: url(./img/hero/download.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: cover;
 }
